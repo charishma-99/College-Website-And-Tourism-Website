@@ -1,0 +1,44 @@
+<div class="container">
+     <link rel="stylesheet" href="hotelbooking.css">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="Email">E-Mail</label>
+    <input type="email" id="E-Mail" name="E-mail" placeholder="Your E-Mail..">
+    <label for="Phone">Phone Number</label>
+    <input type="number" id="Phone Number" name="Phone Number" placeholder="Your Phone Number..">
+    <br>
+    <br>
+    <label for="contact">Contact</label>
+    <select id="contact" name="contact">
+      <option value="E-Mail">E-Mail</option>
+        <option value="Phone">Phone</option>
+    </select>
+
+    <label for="place">Place</label>
+      <select id="place" name="places">
+      <option value="Delhi">Delhi</option>
+      <option value="Agra">Delhi</option>
+      <option value="Jaipur">Jaipur</option>
+      </select>
+      <label for="Payment">Payment Mode</label>
+      <select id="payment Mode" name= "Payment">
+      <option value="Debit/Credit Card">Debit/Credit Card</option>
+      <option value="Upi Mode">Upi Mode</option>
+      <option value="Net Banking">Net Banking</option>
+      </select>
+      
+
+    <button type="button" onclick="msg()" >Submit</button>
+      <script>
+      function msg(){
+          alert("Payment Link Will Be mailed,Please..Check The E-Mail");
+      }
+      </script>
+
+  </form>
+</div>
